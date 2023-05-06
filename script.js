@@ -1,13 +1,16 @@
+
+
 function openDialog() {
+    let cep = document.getElementById("cep").value;
+    document.getElementById("showCep").innerText = cep;
+    
+    if(cep.length==0){
+       document.getElementById("error").removeAttribute("hidden",true)
+    }
+    else{
     var minhaJanela = document.querySelector('#minhaJanela');
     minhaJanela.showModal();
     
-    
-    let cep = document.getElementById("cep").value;
-
-
-
-    document.getElementById("showCep").innerText = cep;
     let url = "https://brasilapi.com.br/api/cep/v1/"+cep;
     
     fetch(url).then(function(dados){
@@ -24,6 +27,7 @@ function openDialog() {
         })
     })
 }
+}
 
 function closeDialog() {
     var minhaJanela = document.querySelector('#minhaJanela');
@@ -32,5 +36,7 @@ function closeDialog() {
     document.getElementById("cidade").innerText =""
     document.getElementById("bairro").innerText = ""
     document.getElementById("rua").innerText = ""
+    document.getElementById("error").setAttribute("hidden",false)
+    
     
 }
