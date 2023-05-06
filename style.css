@@ -141,8 +141,8 @@ dialog{
     
     #windowcontent{
         border: none;
-        width: 300px;
-        height: 450px;
+        width: 250px;
+        height: 300px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -160,8 +160,8 @@ dialog{
         border-radius: 30px;
         background-color: #f7f7f7;
         outline: none;
-        width: 300px;
-        height: 450px;
+        width: 250px;
+        height: 300px;
         
     }
     #error{
