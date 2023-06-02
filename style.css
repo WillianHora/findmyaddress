@@ -87,6 +87,15 @@ dialog{
 #cep{
     border: solid rgb(173, 173, 173) 1px;
 }
+input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }    
 
 @media only screen and (max-width: 668px) {
     * {
@@ -178,6 +187,16 @@ dialog{
         border: solid rgb(173, 173, 173) 1px;
     }
   
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
     }
+    
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }    
+
+}
     
 
