@@ -13,7 +13,7 @@
   
     <div id="base">
         <img src="logo.png" alt="findmyaddress">
-        <input placeholder="Digite o cep aqui" id="cep" type="number">
+        <input placeholder="Digite o cep aqui" id="cep" type="number" maxlength="8" oninput="limitNumberLength(this)">
         <p hidden id="error">Por favor, é necessário digitar um cep</p>
         <button onclick="openDialog()">Procurar!</button>
         <img style="display: inline-block;" id = "lupa"src="iconmonstr-magnifier-5-240.png" alt="">
