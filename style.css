@@ -127,11 +127,11 @@ dialog{
     
     button {
         margin-top: 20px;
-        width: 170px;
+        width: 110px;
         height: 35px;
         border: none;
         border-radius: 20px;
-        font-size: large;
+        font-size: medium;
         background-color: #dcdcdc;
         color: rgb(33, 33, 33);
     }
